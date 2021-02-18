@@ -8,8 +8,9 @@ const Users = require("./routes/api/user");
 const Medicines = require("./routes/api/medicine");
 const Products = require("./routes/api/product");
 const Orders = require("./routes/api/order");
-
+const cors = require('cors')
 const app = express();
+app.use(cors)
 
 // Bodyparser middleware
 app.use(
